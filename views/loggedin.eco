@@ -1,0 +1,28 @@
+<header class="site-header">
+  <div class="container">
+    <div class="row">
+      <div id="login" class="col-sm-12">
+        <form method="post" action="/logout">
+            <input type="submit" value="Logout" class="btn btn-logout pull-right"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="inner-hero">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="cta">
+        <p>Welcome, you can download the investor presentation <a href="img/Ching_Investor_Presentation_Final.pdf" target="_blank">here</a>. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="col-md-6">
+    <img src="img/logo.png" alt="Ching" class="logo pull-left">
+  </div>
+  <div class="col-md-6">
+    <p>Innovative lifestyle-driven fundraising platform.</p>
+  </div>
+</footer>

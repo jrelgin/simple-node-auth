@@ -1,0 +1,58 @@
+
+<header class="site-header">
+  <div class="container">
+    <div class="row">
+      <div id="login" class="col-sm-12">
+        <form class="form-inline pull-right" method="post" action="/login">
+            <% if @loggedOut: %>
+            <p id="info">You have been successfully logged out.</p>
+            <% else if @error: %>
+            <p id="error">Invalid username or password.</p>
+            <% end %>
+            <div class="form-group">
+              <!-- <label for="username">Username</label> -->
+              <input type="text" name="user[name]" placeholder="USERNAME" class="form-control"/>
+            </div>
+            <div class="form-group">
+              <!-- <label for="password">Password</label> -->
+              <input type="password" name="user[password]" placeholder="PASSWORD" class="form-control"/>
+            </div>
+            <input type="submit" value="Login" class="btn btn-ghost"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="hero clearfix">
+  <div class="container">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h2>Be a part of the movement that is changing fundraising forever.</h2>
+    </div>
+  </div>
+</section>
+<section class="quote">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <p> Over the past 30 years, I have helped non-profits raise millions of dollars.  But more can be done.  I want to revolutionize the way causes raise money, especially with Millennials. Ching is transforming fundraising from an ask to a lifestyle!</p>
+      <p class="pull-right"><small>JOHN M. SUDDES<br>Founder/CEO</small></p>
+    </div>
+  </div>
+</section>
+<section class="vision clearfix">
+  <div class="col-md-4">
+    <h1>Our Vision.</h1>
+    <p>They say one person can change the world, and we believe individuals can have more impact than ever before. All it takes is a cause, and the belief that “I can make a difference.”</p>
+    <p>We want to help.</p>
+  </div>
+  <div class="col-md-7 col-md-offset-1">
+    <img src="img/on-mac.png" class="hero-img" alt="Ching on a Mac">
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="col-md-6">
+    <img src="img/logo.png" alt="Ching" class="logo pull-left">
+  </div>
+  <div class="col-md-6">
+    <p>Innovative lifestyle-driven fundraising platform.</p>
+  </div>  
+</footer>
